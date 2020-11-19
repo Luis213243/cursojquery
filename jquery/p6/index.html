@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../jquery-3.3.1.min.js"></script>
+	<title>chekbox </title>
+</head>
+<body>
+  <label>mi valor</label>
+  <input type="checkbox"id="miBox"  name="">
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+  $(document).ready(function(){
+    $('#miBox').click(function(){
+      //asi indica que el el contorl inicia con un check
+       $('#miBox').prop("checked",true);
+      //
+      if ( $('#miBox').is(':checked')) {
+
+        alert("esta cliqueado el boton ");
+      }else {
+          alert("no esta cliqueado el boton ");
+      }
+
+
+    });
+  });
+
+
+</script>
